@@ -1,0 +1,39 @@
+
+<form>
+    <div class="container">
+        <div class="form-horizontal">
+ 
+
+      <div class="form-group">
+          <label class="col-sm-8 control-label" for="UserName">User Name :</label>
+          <div class="col-sm-4">
+            <input required ngModel name="UserName" #name="ngModel" id="UserName" (change)="LogChange(name)" type="text" class="form-control">
+          </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-8">
+          </div>
+        <div class="col-sm-4">
+          <div class="alert alert-danger" *ngIf="!name.valid">User-Name is Compulsory.</div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-8 control-label">Password :</label>
+        <div class="col-sm-4">
+           <input type="password" id = "password" class="form-control">
+        </div>
+     </div>
+<div>
+  <div class="col-sm-8">
+    </div>
+    <div class="col-sm-8">
+
+    <button class="btn btn-primary">Submit</button>
+</div>
+</div>
+
+</div>
+
+</div>
+</form>
